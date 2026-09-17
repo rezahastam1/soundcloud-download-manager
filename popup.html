@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SoundCloud Pro Download Manager</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="brand">
+      <div class="brand-icon" aria-hidden="true">
+        <span>SC</span>
+      </div>
+      <div class="brand-copy">
+        <small>SOUNDCLOUD PRO</small>
+        <h1>Download Manager</h1>
+        <p>Reliable audio capture & organized saving</p>
+      </div>
+      <div class="version">v3.0.1</div>
+    </header>
+
+    <section class="status-card">
+      <div>
+        <small>PAGE STATUS</small>
+        <strong id="pageStatus">در حال بررسی…</strong>
+      </div>
+      <span id="pageBadge" class="page-badge">—</span>
+    </section>
+
+    <section class="feature-card primary-feature">
+      <div class="feature-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+      </div>
+      <div class="feature-copy">
+        <strong>Browser Download Pipeline</strong>
+        <span>پیش‌فرض: فایل ابتدا کامل دریافت و بررسی می‌شود، سپس با نام مرتب داخل Downloads ذخیره می‌شود.</span>
+      </div>
+      <span class="mode-pill browser">DEFAULT</span>
+    </section>
+
+    <section class="feature-card">
+      <div class="feature-icon fdm">
+        <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg>
+      </div>
+      <div class="feature-copy">
+        <strong>Free Download Manager</strong>
+        <span>اختیاری؛ فقط برای لینک‌های مستقیم. HLS همیشه با مسیر امن مرورگر ذخیره می‌شود.</span>
+      </div>
+      <button id="fdmToggle" class="toggle" type="button" aria-pressed="false"><span></span></button>
+    </section>
+
+    <section class="feature-card">
+      <div class="feature-icon ad">
+        <svg viewBox="0 0 24 24"><path d="M4 9v6m4-8v10m4-13v16m4-11v6m4-4v2"/></svg>
+      </div>
+      <div class="feature-copy">
+        <strong>Main-World Ad Engine</strong>
+        <span>Mute + 16× + Auto Skip روی تبلیغ، بدون تغییر در دانلود ترک.</span>
+      </div>
+      <button id="adToggle" class="toggle is-on" type="button" aria-pressed="true"><span></span></button>
+    </section>
+
+    <section class="naming-card">
+      <div class="naming-head">
+        <div>
+          <small>FILE NAMING</small>
+          <strong>Artist - Track Title</strong>
+        </div>
+        <span>Finglish</span>
+      </div>
+      <div class="example-row">
+        <code>آهنگ جدید</code>
+        <b>→</b>
+        <code>Ahang Jadid</code>
+      </div>
+      <p>بدون شماره، Track ID یا نام CDN. اگر نام فارسی باشد، قبل از ذخیره به Finglish تبدیل می‌شود.</p>
+    </section>
+
+    <section class="mini-grid">
+      <div><b>100%</b><span>Real progress</span></div>
+      <div><b>⌂</b><span>Folder sorting</span></div>
+      <div><b>✓</b><span>Bulk queue</span></div>
+      <div><b>∞</b><span>Playlist / User</span></div>
+    </section>
+
+    <button id="reload" class="primary-btn" type="button">
+      <span>Refresh SoundCloud</span>
+      <svg viewBox="0 0 24 24"><path d="M20 6v5h-5M4 18v-5h5M6.1 8A7 7 0 0 1 18 6l2 5M17.9 16A7 7 0 0 1 6 18l-2-5"/></svg>
+    </button>
+
+    <footer>
+      <span>Designed &amp; Developed by <b>Reza Zarnegar</b></span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
